@@ -14,6 +14,8 @@ import {DateRangePicker} from "react-date-range";
 
 import {useRouter} from "next/dist/client/router";
 
+import ThemeToggle from "./ThemeToggle";
+
 const Header = (props) => {
   const [searchInput, setSearchInput] = useState("");
   const [startDate, setStartDate] = useState(new Date());
@@ -82,6 +84,7 @@ const Header = (props) => {
       <div className="flex items-center space-x-4 justify-end text-gray-500  ">
         <p className="hidden md:inline ">Become a host</p>
         <GlobeAltIcon className="h-6 cursor-pointer" />
+        <ThemeToggle icon />
         <div className="flex items-center space-x-2 border-2 p-2 rounded-full">
           <MenuIcon className="h-6 " />
           <UserCircleIcon className="h-6" />
@@ -96,7 +99,9 @@ const Header = (props) => {
             minDate={new Date()}
             rangeColors={["#FD5B61"]}
           />
-          <div className="flex items-center border-b mb-4">
+          <div
+            /* className="flex items-center border-b mb-4" */ className="flex items-center border-b bg-white shadow-sm"
+          >
             <h2 className="text-2xl flex-grow font-semibold">
               Number of guests
             </h2>
@@ -111,11 +116,17 @@ const Header = (props) => {
             />
           </div>
 
-          <div className="flex">
-            <button className="flex-grow text-gray-500" onClick={handleCancel}>
+          <div className="flex bg-white pt-4  shadow-sm rounded-b-lg">
+            <button
+              className="flex-grow text-gray-500 rounded-lg bg-white hover:bg-red-400 hover:shadow-md p-2 mr-1 transiton duration-300 hover:text-white "
+              onClick={handleCancel}
+            >
               Cancel
             </button>
-            <button className="flex-grow text-red-400" onClick={handleSearch}>
+            <button
+              className="flex-grow  text-red-400 rounded-lg bg-white hover:shadow-md hover:bg-red-400 p-2 transiton duration-300 hover:text-white "
+              onClick={handleSearch}
+            >
               Search
             </button>
           </div>

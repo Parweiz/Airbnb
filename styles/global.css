@@ -4,4 +4,12 @@
   .button {
     @apply px-4 py-2 border rounded-full cursor-pointer hover:shadow-lg active:scale-95 active:bg-gray-100 transition transform duration-100 ease-out;
   }
+
+  .footerCol {
+    @apply space-y-4 text-xs text-gray-800;
+  }
+
+  .footerColItem {
+    @apply hover:underline cursor-pointer;
+  }
 }

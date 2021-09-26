@@ -1,38 +1,40 @@
 const Footer = () => {
   return (
-    <footer className="grid grid-cols-1 md:grid-cols-4 gap-y-10 px-32 py-40 bg-gray-100 text-gray-600">
-      <div className="space-y-4 text-xs text-gray-800">
-        <h5 className="font-bold">ABOUT</h5>
-        <p>How Airbnb works</p>
-        <p>Newsroom</p>
-        <p>Investors</p>
-        <p>Airbnb Plus</p>
-        <p>Airbnb Luxe</p>
-      </div>
+    <footer className="md:px-10 lg: py-14 bg-gray-200 text-gray-600">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-40 ml-10  lg:grid-cols-5 xl:grid-cols-5 gap-y-10 mx-auto">
+        <div className="footerCol w-full">
+          <h5 className="font-bold text-lg">ABOUT</h5>
+          <p className="footerColItem">How Airbnb works</p>
+          <p className="footerColItem">Newsroom</p>
+          <p className="footerColItem">Investors</p>
+          <p className="footerColItem">Airbnb Plus</p>
+          <p className="footerColItem">Airbnb Luxe</p>
+        </div>
 
-      <div className="space-y-4 text-xs text-gray-800">
-        <h5 className="font-bold">COMMUNITY</h5>
-        <p>TEST A</p>
-        <p>TEST B</p>
-        <p>TEST C</p>
-        <p>TEST D</p>
-        <p>TEST E</p>
-      </div>
-      <div className="space-y-4 text-xs text-gray-800">
-        <h5 className="font-bold">HOST</h5>
-        <p>TEST F</p>
-        <p>TEST G</p>
-        <p>TEST H</p>
-        <p>TEST I</p>
-        <p>TEST j</p>
-      </div>
-      <div className="space-y-4 text-xs text-gray-800">
-        <h5 className="font-bold">SUPPORT</h5>
-        <p>TEST K</p>
-        <p>TEST L</p>
-        <p>TEST M</p>
-        <p>TEST N</p>
-        <p>TEST O</p>
+        <div className="space-y-4 text-xs text-gray-800">
+          <h5 className="font-bold text-lg">COMMUNITY</h5>
+          <p className="footerColItem">TEST A</p>
+          <p className="footerColItem">TEST B</p>
+          <p className="footerColItem">TEST C</p>
+          <p className="footerColItem">TEST D</p>
+          <p className="footerColItem">TEST E</p>
+        </div>
+        <div className="space-y-4 text-xs text-gray-800">
+          <h5 className="font-bold text-lg">HOST</h5>
+          <p className="footerColItem">TEST F</p>
+          <p className="footerColItem">TEST G</p>
+          <p className="footerColItem">TEST H</p>
+          <p className="footerColItem">TEST I</p>
+          <p className="footerColItem">TEST j</p>
+        </div>
+        <div className="space-y-4 text-xs text-gray-800">
+          <h5 className="font-bold text-lg">SUPPORT</h5>
+          <p className="footerColItem">TEST K</p>
+          <p className="footerColItem">TEST L</p>
+          <p className="footerColItem">TEST M</p>
+          <p className="footerColItem">TEST N</p>
+          <p className="footerColItem">TEST O</p>
+        </div>
       </div>
     </footer>
   );
